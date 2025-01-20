@@ -1,5 +1,5 @@
 header {
-  background-color: #ff6b6b;
+  background-color: #c076fd;
   color: white;
   text-align: center;
   padding: 10px;
@@ -16,7 +16,6 @@ section {
 }
 section img {
   width: 100%;
-  border-radius: 8px;
 }
 section label {
   font-family: "Arial", sans-serif;
@@ -30,9 +29,13 @@ section input[type=checkbox] {
 }
 
 .img-section {
-  object-fit: fill;
   margin: 0;
   padding: 0;
+}
+.img-section img {
+  object-fit: cover;
+  height: 30vh;
+  width: 100%;
 }
 
 .ingredients-section {
@@ -43,7 +46,7 @@ section input[type=checkbox] {
   padding: 0;
 }
 .ingredients-section .ingredients {
-  background-color: #ffe66d;
+  background-color: #ecbefe;
   border-radius: 5%;
   display: flex;
   flex-direction: column;
@@ -65,8 +68,18 @@ section input[type=checkbox] {
   flex: 0.5;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  text-align: center;
+}
+.ingredients-section .time .countdown {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+.ingredients-section .time .countdown button {
+  background-color: #ecbefe;
+  border: 0.3px solid #924eff;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .ingredients-section .time p {
   margin-bottom: 8px;
@@ -88,7 +101,7 @@ section input[type=checkbox] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffe66d;
+  background-color: #ecbefe;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -101,7 +114,7 @@ section input[type=checkbox] {
 }
 
 footer {
-  background-color: #ff6b6b;
+  background-color: #c076fd;
   padding: 10px;
   justify-content: space-between;
   display: flex;

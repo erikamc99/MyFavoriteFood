@@ -19,7 +19,6 @@ section {
   
     & img {
       width: 100%;
-      border-radius: 8px;
     }
   
     label {
@@ -33,11 +32,18 @@ section {
       height: 25px;
       padding: 0;
     }
+
+    
 }
 .img-section {
-  object-fit: fill;
   margin: 0;
   padding: 0;
+  
+   img {
+    object-fit: cover;
+    height: 30vh;
+    width: 100%;
+   }
 }
 .ingredients-section {
     display: flex;
@@ -74,14 +80,27 @@ section {
       flex: 0.5;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: $padding;
-  
+      text-align: center;
+
+      .countdown {
+        display: block;
+        text-align: center;
+        justify-content: center;
+      
+        button {
+          background-color: $secondary-color;
+          border: 0.3px solid $background-color;
+          border-radius: 20px;
+          cursor: pointer;
+      }
+    }
       p {
         margin-bottom: 8px;
         font-weight: bold;
       }
     }
+    
+    
 }
   
 .steps-section {
@@ -94,7 +113,7 @@ section {
     align-items: flex-start; 
   
     .step-num {
-      padding: 10px;
+      padding: $padding;
       display: flex;
       justify-content: center;
       align-items: center;
