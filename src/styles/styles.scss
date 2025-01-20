@@ -38,7 +38,8 @@ section {
 .img-section {
   margin: 0;
   padding: 0;
-  
+  height: 30vh;
+
    img {
     object-fit: cover;
     height: 30vh;
@@ -54,7 +55,7 @@ section {
   
     .ingredients {
       background-color: $secondary-color; 
-      border-radius: 5%;
+      border-radius: 0 0 10px 10px;
       display: flex;
       flex-direction: column;
       padding: $padding;
@@ -62,6 +63,7 @@ section {
       
   
       h4 {
+        font-size: 20px;
         text-align: center;
       }
   
@@ -81,13 +83,24 @@ section {
       display: flex;
       flex-direction: column;
       text-align: center;
+      padding: $padding;
+      
+      p {
+        font-size: 25px;
+        margin-top: 0;
+      }
 
       .countdown {
         display: block;
         text-align: center;
-        justify-content: center;
-      
+
+        p {
+          font-size: 30px;
+          margin: 0;
+        };
+
         button {
+          margin-top: 5px;
           background-color: $secondary-color;
           border: 0.3px solid $background-color;
           border-radius: 20px;
@@ -102,7 +115,9 @@ section {
     
     
 }
-  
+h2 {
+  text-align: center;
+}  
 .steps-section {
   display: grid; 
   grid-template-columns: repeat(2, 1fr);

@@ -31,6 +31,7 @@ section input[type=checkbox] {
 .img-section {
   margin: 0;
   padding: 0;
+  height: 30vh;
 }
 .img-section img {
   object-fit: cover;
@@ -47,13 +48,14 @@ section input[type=checkbox] {
 }
 .ingredients-section .ingredients {
   background-color: #ecbefe;
-  border-radius: 5%;
+  border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
   padding: 10px;
   width: 60%;
 }
 .ingredients-section .ingredients h4 {
+  font-size: 20px;
   text-align: center;
 }
 .ingredients-section .ingredients .check-ingredients {
@@ -69,13 +71,22 @@ section input[type=checkbox] {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 10px;
+}
+.ingredients-section .time p {
+  font-size: 25px;
+  margin-top: 0;
 }
 .ingredients-section .time .countdown {
   display: block;
   text-align: center;
-  justify-content: center;
+}
+.ingredients-section .time .countdown p {
+  font-size: 30px;
+  margin: 0;
 }
 .ingredients-section .time .countdown button {
+  margin-top: 5px;
   background-color: #ecbefe;
   border: 0.3px solid #924eff;
   border-radius: 20px;
@@ -84,6 +95,10 @@ section input[type=checkbox] {
 .ingredients-section .time p {
   margin-bottom: 8px;
   font-weight: bold;
+}
+
+h2 {
+  text-align: center;
 }
 
 .steps-section {
