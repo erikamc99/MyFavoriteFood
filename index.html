@@ -6,42 +6,75 @@
         <title>My Favorite Food</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./src/styles.css">
+        
     </head>
     <body>
-        <header><h1>Title </h1></header>
+        <header><h1>Arroz con pollo al curry </h1></header>
         <main>
-            <section>
-                <img src="./src/img/" alt="">
+            <section class="img-section">
+                <img src="./src/img/arroz-pollo-curry.webp" alt="Un plato de arroz con pollo al curry">
             </section>
-            <section>
-                <div>
-                    <label for="ingredients">INGREDIENTS</label>
-                    <input type="checkbox" name="ingredients" id="ingredients">
+            <section class="ingredients-section">
+                <div class="ingredients">
+                    <div>
+                        <h4>INGREDIENTS</h4>
+                    </div>
+                    <div class="check-ingredients">
+                        <input type="checkbox" name="ingredients" id="ingredient1">
+                        <label for="ingredient1">800 g de arroz blanco</label>
+                        <input type="checkbox" name="ingredients" id="ingredient2">
+                        <label for="ingredient2">2 pechugas de pollo</label>
+                        <input type="checkbox" name="ingredients" id="ingredient3">
+                        <label for="ingredient3">150 gramos de champiñones</label>
+                        <input type="checkbox" name="ingredients" id="ingredient4">
+                        <label for="ingredient4">Curry en polvo</label>
+                        <input type="checkbox" name="ingredients" id="ingredient5">
+                        <label for="ingredient5">Aceite</label>
+                        <input type="checkbox" name="ingredients" id="ingredient6">
+                        <label for="ingredient6">Sal y pimienta</label>
+                    </div>
                 </div>
-                <div>
+                <div class="time">
                     <p>Time</p>
-                 <!--icono y minutos -->  
-                    setCounter
+                    <p>20'</p>
+                    <div id="coountdown"></div>
                 </div>
             </section>
-            <section>
-                <div>1</div>
-                <div><p>Texto pasos</p></div>
-                <div>2</div>
-                <div><p>Texto pasos</p></div>
-                <div>3</div>
-                <div><p>Texto pasos</p></div>
-                <div>4</div>
-                <div><p>Texto pasos</p></div>
+            <section class="steps-section">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div>
+                    <p>Limpia las pechugas y córtalas en dados, sazónalos y espolvorea con un poco de curry.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div>
+                    <p>Limpia, lava y seca los champiñones. Córtalos en láminas, saltéalos en una sartén con un hilo de aceite durante 2 minutos, salpimiéntalos y retíralos.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div>
+                    <p>Añade el pollo a la sartén, saltéalo durante 5 minutos y retíralo.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div>
+                    <p>Agrega entonces un poco más de aceite y saltea el arroz. Espolvoréalo con curry y remueve. Añade el pollo y los champiñones, mezcla bien y sirve.</p>
+                    </div>
+                </div>  
             </section>
         </main>
         <footer>
-          <div>  <!--icono copyright--> <p>Created by Erica Montesinos</p></div>
-          <div>
-            <a href="">Icono LinkedIn</a>
-            <a href="">Icono Instagram</a>
-            <a href="">Icono Facebook</a>
-            <a href="">Icono X</a>
+          <div class="footer-text">
+            <p>© Created by Erica Montesinos</p></div>
+          <div class="rrss-icons">
+            <a href="https://www.linkedin.com/in/erica-montesinos-corell-emc3399/"><img src="./src/img/linkedin.ico" alt="linkedin"></a>
+            <a href="https://www.instagram.com/booblue._"><img src="./src/img/instagram.ico" alt="instagram"></a>
+            <a href="https://www.facebook.com/erika.montesinos.99"><img src="./src/img/Facebook.ico" alt="facebook"></a>
+            <a href="#"><img src="./src/img/twitter_x.ico" alt="x"></a>
           </div>
         </footer>
         <script type="module" src="./src/counter.js"></script>

@@ -1,0 +1,121 @@
+header {
+  background-color: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+header h1 {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+}
+
+section {
+  margin: 10px auto;
+  padding: 10px;
+}
+section img {
+  width: 100%;
+  border-radius: 8px;
+}
+section label {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+section input[type=checkbox] {
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+
+.img-section {
+  object-fit: fill;
+  margin: 0;
+  padding: 0;
+}
+
+.ingredients-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0;
+  padding: 0;
+}
+.ingredients-section .ingredients {
+  background-color: #ffe66d;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 60%;
+}
+.ingredients-section .ingredients h4 {
+  text-align: center;
+}
+.ingredients-section .ingredients .check-ingredients {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr 1fr;
+  gap: 5px;
+}
+.ingredients-section .ingredients .check-ingredients input {
+  margin-right: 5px;
+}
+.ingredients-section .time {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.ingredients-section .time p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.steps-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.steps-section .step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.steps-section .step .step-num {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe66d;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.steps-section .step p {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #ff6b6b;
+  padding: 10px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+}
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

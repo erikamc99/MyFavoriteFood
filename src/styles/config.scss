@@ -1,0 +1,23 @@
+$primary-color: #ff6b6b;
+$secondary-color: #ffe66d;
+$background-color: #7926ff;
+$text-color: #333;
+
+$font-family: 'Arial', sans-serif;
+$padding: 10px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-check {
+  justify-items: center;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
